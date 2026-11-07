@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+</head>
+<body> 
+
+    <!1)First>
+       <form>
+
+         <p><strong>1)adding student data</strong></p>
+
+         <label>First Name</label>
+         <input type="text" name="First Name"><br><br>
+
+         <label>Last Name</label>
+         <input type="text" name="Last Name"><br><br>
+
+         <label>Email</label>
+         <input type="text" name="Email"><br><br>
+
+         <label>General average</label>
+         <input type="number" name="General average" step="0.01"><br><br>
+
+         <button type="submit">Enregistrer</button>
+       </form><br>
+
+       <!2)Second>
+       <form >
+
+          <p><strong>2)Adding specializations</strong></p>
+
+          <label>New specializations</label>
+          <input type="text" placeholder="New specializations"> <button type="submit">Enregistrer</button><br><br>
+          
+          <table border="1">
+            <thead>
+             <tr>
+               <th>Code</th>
+               <th>Specializations</th>
+               <th></th>
+             </tr>
+            </thead>
+            <tbody>
+             <tr>
+               <td>p1</td>
+               <td>Ai</td>
+               <td><button type="button">Modifier</button> <button type="button">Supprimer</button></td>
+             </tr>
+             <tr>
+               <td>P2</td>
+               <td>cyber security</td>
+               <td><button type="button">Modifier</button> <button type="button">Supprimer</button></td>
+             </tr>
+             <tr>
+               <td>p3</td>
+               <td>Data Science</td>
+               <td><button type="button">Modifier</button> <button type="button">Supprimer</button></td>
+             </tr>
+             <tr>
+               <td>p4</td>
+               <td>System dinformation</td>
+               <td><button type="button">Modifier</button> <button type="button">Supprimer</button></td>
+             </tr>
+            </tbody>
+          </table>
+       </form><br>
+        
+       <!3)Third>
+        <form>
+
+           <p><strong>3)Gestion des criteres et des poids</strong></p>
+            
+           <label>Course</label>
+           <input type="text" name="Course" required><br><br>
+
+           <label>Poids</label>
+           <input type="text" name="Poids" min="0" max="1"><br><br>
+
+           <label>Type</label>
+           <select name="Type">
+            <option value="Maximiser">Maximiser</option>
+            <option value="Minimiser">Minimiser</option>
+           </select><br><br>
+
+           <button type="submit">Enregistrer</button><br><br>
+           
+           <table border="1">
+            <thead>
+               <tr>
+                 <th>Cours</th>
+                 <th>Poids</th>
+                 <th></th>
+               </tr>
+            </thead>
+            <body>
+                <tr>
+                    <td>prgramation</td>
+                    <td>0.20</td>
+                    <td><button type="button">Modifier</button> <button type="button">Supprimer</button></td>
+                </tr>
+                <tr>
+                    <td>Mathematigues</td>
+                    <td>0.15</td>
+                    <td><button type="button">Modifier</button> <button type="button">Supprimer</button></td>
+                </tr>
+                <tr>
+                    <td>Adequation</td>
+                    <td>0.20</td>
+                    <td><button type="button">Modifier</button> <button type="button">Supprimer</button></td>
+                </tr>
+                <tr>
+                    <td>Debouches</td>
+                    <td>0.20</td>
+                    <td><button type="button">Modifier</button> <button type="button">Supprimer</button></td>
+                </tr>
+                <tr>
+                    <td>Difficulte</td>
+                    <td>0.10</td>
+                    <td><button type="button">Modifier</button> <button type="button">Supprimer</button></td>
+                </tr>
+                <tr>
+                    <td>Interet personal </td>
+                    <td>0.15</td>
+                    <td><button type="button">Modifier</button> <button type="button">Supprimer</button></td>
+                </tr>
+            </body>
+           </table>
+        </form><br>
+
+       <!4)Fourth >
+       <Form>
+
+        <p><strong>4)Entering student evaluation</strong></p>
+
+         <label">Etudiant</label>
+         <input type="text" name="Etudiant">
+      
+         <ul>
+           <li>Ai <input type="number" name="Ai" min="1" max="10"></li>
+           <li>cyber security <input type="number" name="Ai" min="1" max="10"></li>
+           <li>Data Science <input type="number" name="Ai" min="1" max="10"></li>
+           <li>System dinformation <input type="number" name="Ai" min="1" max="10"></li>
+         </ul>
+       
+         <button type="submit">Enregistrer</button>
+       </Form><br>
+
+       <!5)>
+       <Form>
+
+         <p><strong>5)Show recommended specializations</strong></p>
+          
+          <div>
+            <label>Etudiant</label><input type="text" name="Etudiant"><button type="button"></button>
+            <button type="button">calcul</button>
+          </div><br>
+
+          <table border="1">
+            <thead>
+             <tr>
+                <th>Rang</th>
+                <th>Specializations</th>
+                <th>score</th>
+             </tr>
+            </thead>
+            <body>
+                <tr>
+                    <td>1</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </body>
+          </table>
+       </Form>
+
+</body>
+</html>
