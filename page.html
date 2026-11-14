@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="page.css">
     <title>Inscription</title>
 </head>
 <body> 
 
     <!1)First>
-       <form>
-
-         <p><strong>1)adding student data</strong></p>
+       <form id="first">
+                 
+          <div class="sectionn">
+             <p class="number">1 </p>
+              <h1 class="title">Adding student data</h1>
+          </div>
 
          <label>First Name</label>
          <input type="text" name="First Name"><br><br>
@@ -26,14 +30,19 @@
 
          <button type="submit">Enregistrer</button>
        </form><br>
-
+        
        <!2)Second>
-       <form >
+       <form id="second" >
 
-          <p><strong>2)Adding specializations</strong></p>
+           <div class="sectionn">
+             <p class="number">2</p>
+             <h1 class="title">Adding specializations</h1>
+          </div>
 
-          <label>New specializations</label>
-          <input type="text" placeholder="New specializations"> <button type="submit">Enregistrer</button><br><br>
+          <div id="form second">
+            <label >New specializations</label>
+          <div class="inputt second"><input type="text" placeholder="New specializations"><button type="submit">Enregistrer</button></div>
+          </div>
           
           <table border="1">
             <thead>
@@ -69,9 +78,12 @@
        </form><br>
         
        <!3)Third>
-        <form>
+        <form id="Third">
 
-           <p><strong>3)Gestion des criteres et des poids</strong></p>
+             <div class="sectionn">
+             <p class="number">3</p>
+             <h1 class="title">Gestion des criteres et des poids</h1>
+          </div>
             
            <label>Course</label>
            <input type="text" name="Course" required><br><br>
@@ -95,7 +107,7 @@
                  <th></th>
                </tr>
             </thead>
-            <body>
+            <tbody>
                 <tr>
                     <td>prgramation</td>
                     <td>0.20</td>
@@ -126,16 +138,19 @@
                     <td>0.15</td>
                     <td><button type="button">Modifier</button> <button type="button">Supprimer</button></td>
                 </tr>
-            </body>
+            </tbody>
            </table>
         </form><br>
 
        <!4)Fourth >
-       <Form>
+       <Form id="fourth">
 
-        <p><strong>4)Entering student evaluation</strong></p>
+            <div class="sectionn">
+             <p class="number">4</p>
+             <h1 class="title">Entering student evaluation</h1>
+          </div>
 
-         <label">Etudiant</label>
+         <label>Etudiant</label>
          <input type="text" name="Etudiant">
       
          <ul>
@@ -148,14 +163,20 @@
          <button type="submit">Enregistrer</button>
        </Form><br>
 
-       <!5)>
-       <Form>
+       <!5)Fifith>
+       <Form id="fifth">
+             
+               <div class="sectionn">
+             <p class="number">5</p>
+             <h1 class="title">Show recommended specializations</h1>
+          </div>
 
-         <p><strong>5)Show recommended specializations</strong></p>
-          
-          <div>
-            <label>Etudiant</label><input type="text" name="Etudiant"><button type="button"></button>
+          <div input Fifith>
+            <label>Etudiant</label>
+            <div class="inputt Fifith">
+            <input type="text" name="Etudiant"><button type="button"></button>
             <button type="button">calcul</button>
+            </div>
           </div><br>
 
           <table border="1">
@@ -166,7 +187,7 @@
                 <th>score</th>
              </tr>
             </thead>
-            <body>
+            <tbody>
                 <tr>
                     <td>1</td>
                     <td></td>
@@ -182,7 +203,7 @@
                     <td></td>
                     <td></td>
                 </tr>
-            </body>
+            </tbody>
           </table>
        </Form>
 
